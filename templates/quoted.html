@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quoted
+{% endblock %}
+
+{% block main %}
+
+    <p> a share of {{ smbl.name }} [ {{ smbl['symbol'] }} ] costs {{ smbl['price'] | usd }} </p>
+
+{% endblock %}
+
